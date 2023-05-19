@@ -1,0 +1,33 @@
+// OPEN FORM1, TIMER1
+// Sub displaytime() IS FUNCTION
+
+
+Public Class Form1
+    Dim t As Integer
+    Dim s As Integer
+    Dim m As Integer
+    Sub displaytime()
+
+        Label1.Text = Format(m, "00") + ":" + Format(s, "00") + ":" + Format(t, "00")
+
+    End Sub
+
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        t = t + 1
+        displaytime()
+
+        If t > 10 Then
+            t = 0
+            If s < 60 Then
+                s = s + 1
+            Else
+                s = 0
+                m = m + 1
+            End If
+
+        End If
+
+    End Sub
+
+RUN THE CODE...

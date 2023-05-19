@@ -1,0 +1,20 @@
+// DRAG & DROP
+
+1. LABEL , TIMER , BUTTON1 NAME= START , BUTTON2 NAME= STOP, BUTTON3 NAME=RESET
+
+2. LABEL FONT SIZE=48 
+
+3. START BUTTON OPEN 
+
+Timer1.Enabled = True
+
+4. STOP BUTTON OPEN
+
+Timer1.Enabled = False
+
+5. RESET BUTTON OPEN
+
+   Label1.Text = "00" + ":" + "00" + ":" + "00"
+        t = 0
+        s = 0
+        m = 0
